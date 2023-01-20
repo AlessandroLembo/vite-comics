@@ -14,7 +14,38 @@ export default {
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>FOOTER BOTTOM</p>
+                <div class="link-lists">
+                    <div class="left-lists">
+                        <nav class="top-list">
+                            <h2 class="title-list">DC COMICS</h2>
+                            <ul>
+                                <li><a href="#">acqua</a></li>
+
+                            </ul>
+                        </nav>
+                        <nav class="bottom-list">
+                            <h2 class="title-list">SHOP</h2>
+                            <ul>
+                                <li><a href="#">acqua</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav class="center-list">
+                        <h2 class="title-list">DC</h2>
+                        <ul>
+                            <li><a href="#">acqua</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="right-list">
+                        <h2 class="title-list">SITES</h2>
+                        <ul>
+                            <li><a href="#">acqua</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <figure>
+                    <img src="" alt="">
+                </figure>
             </div>
         </div>
     </footer>
@@ -23,8 +54,16 @@ export default {
 
 <style scoped>
 .footer-top {
-    background-color: brown;
+    background-image: url('../assets/img/footer-bg.jpg');
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 350px;
+}
+
+.link-lists {
+    display: flex;
+    align-items: center;
 }
 
 .footer-bottom {
