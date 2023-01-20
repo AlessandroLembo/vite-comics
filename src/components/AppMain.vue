@@ -8,13 +8,13 @@ export default {
 <template>
     <main>
         <div class="content-top">
-            <div class="container">
-                <p>TOO CONTENT</p>
+            <div class="container main-top-content">
+                <h2>--CONTENT--</h2>
             </div>
         </div>
         <div class="content-bottom">
             <div class="container">
-                <p>ICON</p>
+                <h2>ICON</h2>
             </div>
         </div>
 
@@ -23,17 +23,30 @@ export default {
 </template>
 
 <style scoped>
+/* TOP CONTENT */
 .content-top {
     background-color: rgba(0, 0, 0, 0.8);
-    min-height: 120px;
+    height: 120px;
 }
 
+.container.main-top-content {
+    height: 100%;
+}
+
+h2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* BOTTOM CONTENT */
 .content-bottom {
     background-color: dodgerblue;
     min-height: 170px;
 }
 
-p {
+/* Utils */
+h2 {
     color: white;
 }
 </style>

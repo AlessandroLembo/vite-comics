@@ -35,7 +35,6 @@ export default {
 /* Generics */
 body {
   font-family: "Open Sans", sans-serif;
-  padding-top: 120px;
 }
 
 .container {
