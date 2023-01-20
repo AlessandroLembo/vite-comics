@@ -21,6 +21,7 @@ export default {
   <app-main></app-main>
   <app-footer></app-footer>
 
+
 </template>
 
 <style>
@@ -34,6 +35,12 @@ export default {
 /* Generics */
 body {
   font-family: "Open Sans", sans-serif;
+  padding-top: 120px;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
 }
 
 img {
@@ -41,6 +48,7 @@ img {
   height: auto;
 }
 
+/* Utils */
 a {
   text-decoration: none;
 }

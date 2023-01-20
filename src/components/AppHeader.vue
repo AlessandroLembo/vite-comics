@@ -63,9 +63,22 @@ export default {
 </script>
 
 <template>
+    <header>
+        <div class="container">
+            <p>HEADER</p>
 
+        </div>
+
+    </header>
 </template>
 
-<style>
-
+<style scoped>
+header {
+    background-color: aqua;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 </style>
