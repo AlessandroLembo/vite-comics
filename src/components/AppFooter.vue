@@ -8,7 +8,7 @@ export default {
 <template>
     <footer>
         <div class="footer-top">
-            <div class="container">
+            <div class="container footer-content">
                 <div class="link-lists">
                     <div class="left-lists">
                         <nav class="top-list">
@@ -59,7 +59,7 @@ export default {
                     </nav>
                 </div>
                 <figure>
-                    <img src="" alt="">
+                    <img src="../assets/img/dc-logo-bg.png" alt="logo">
                 </figure>
             </div>
         </div>
@@ -73,17 +73,27 @@ export default {
 </template>
 
 <style scoped>
+footer {
+    height: 500px;
+}
+
 .footer-top {
     background-image: url('../assets/img/footer-bg.jpg');
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 350px;
+    height: 380px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .link-lists {
     display: flex;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
 }
 
 .top-list {
@@ -96,7 +106,8 @@ export default {
 
 .footer-bottom {
     background-color: cornflowerblue;
-    min-height: 350px;
+    min-height: 120px;
+    position: relative;
 }
 
 /* Utils */

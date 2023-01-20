@@ -24,6 +24,11 @@ export default {
 
 <style scoped>
 /* TOP CONTENT */
+main {
+    height: calc(100vh - 620px);
+    overflow-y: auto;
+}
+
 .content-top {
     background-color: rgba(0, 0, 0, 0.8);
     height: 120px;
@@ -42,7 +47,8 @@ h2 {
 /* BOTTOM CONTENT */
 .content-bottom {
     background-color: dodgerblue;
-    min-height: 170px;
+    min-height: calc((100vh - 620px) - 120px);
+    position: relative;
 }
 
 /* Utils */

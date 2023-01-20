@@ -94,6 +94,11 @@ export default {
 /* HEADER */
 header {
     height: 120px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .header-container {
