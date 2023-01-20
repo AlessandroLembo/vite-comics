@@ -41,6 +41,7 @@ body {
 .container {
   width: 1400px;
   margin: 0 auto;
+  height: 100%;
 }
 
 img {
@@ -51,5 +52,9 @@ img {
 /* Utils */
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 </style>
