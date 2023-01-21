@@ -34,7 +34,6 @@ export default {
 /* Generics */
 body {
   font-family: "Open Sans", sans-serif;
-  padding-top: 120px;
 }
 
 .container {
@@ -56,5 +55,11 @@ a {
 
 li {
   list-style-type: none;
+  cursor: pointer;
+}
+
+h2 {
+  color: white;
+  cursor: pointer;
 }
 </style>
