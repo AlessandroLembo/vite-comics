@@ -83,6 +83,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+/* Mixin for vertical alignment */
+@mixin vertical-algnm {
+    display: flex;
+    align-items: center;
+}
+
 /* HEADER */
 header {
     height: 120px;
@@ -91,8 +97,7 @@ header {
 
 .header-container {
     height: 100%;
-    display: flex;
-    align-items: center;
+    @include vertical-algnm;
     justify-content: space-between;
 
     img {
@@ -106,8 +111,7 @@ nav {
 }
 
 .nav-header {
-    display: flex;
-    align-items: center;
+    @include vertical-algnm;
     height: 100%;
 
     a {
@@ -122,8 +126,7 @@ nav {
 
     li {
         height: 100%;
-        display: flex;
-        align-items: center;
+        @include vertical-algnm;
 
         &.active {
             border-bottom: 4px solid dodgerblue;
