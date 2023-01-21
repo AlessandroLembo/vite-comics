@@ -60,10 +60,12 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixins' as *;
+@use '../assets/scss/partials/variables' as *;
+
 
 /* SECTION MAIN LINKS */
 #links-main {
-    background-color: dodgerblue;
+    background-color: $dodger;
     height: 150px;
     position: relative;
 }

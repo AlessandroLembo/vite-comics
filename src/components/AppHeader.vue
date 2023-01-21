@@ -84,6 +84,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixins' as *;
+@use '../assets/scss/partials/variables' as *;
 
 /* HEADER */
 header {
@@ -116,7 +117,7 @@ nav {
         font-size: 20px;
 
         &.active {
-            color: dodgerblue;
+            color: $dodger;
         }
     }
 
@@ -125,7 +126,7 @@ nav {
         @include vertical-algnm;
 
         &.active {
-            border-bottom: 4px solid dodgerblue;
+            border-bottom: 4px solid $dodger;
             padding-top: 4px;
         }
     }
