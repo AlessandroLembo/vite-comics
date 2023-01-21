@@ -41,19 +41,19 @@ footer {
 
 /* Left footer */
 .footer-content {
-    @include vertical-algnm;
+    @include vertical_algnm;
     justify-content: space-between;
 }
 
 /* Right footer */
 .links-footer {
-    @include vertical-algnm;
+    @include vertical_algnm;
     justify-content: center;
 }
 
 
 .icon-footer {
-    @include vertical-algnm;
+    @include vertical_algnm;
 
     li {
         padding: 0 10px;

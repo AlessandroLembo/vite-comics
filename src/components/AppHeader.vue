@@ -93,8 +93,8 @@ header {
 }
 
 .header-container {
-    height: 100%;
-    @include vertical-algnm;
+    height: $h100;
+    @include vertical_algnm;
     justify-content: space-between;
 
     img {
@@ -104,12 +104,12 @@ header {
 
 /* Navbar Header */
 nav {
-    height: 100%;
+    height: $h100;
 }
 
 .nav-header {
-    @include vertical-algnm;
-    height: 100%;
+    @include vertical_algnm;
+    height: $h100;
 
     a {
         color: black;
@@ -122,8 +122,8 @@ nav {
     }
 
     li {
-        height: 100%;
-        @include vertical-algnm;
+        height: $h100;
+        @include vertical_algnm;
 
         &.active {
             border-bottom: 4px solid $dodger;

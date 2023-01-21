@@ -71,9 +71,9 @@ export default {
 }
 
 .main-images {
-    @include vertical-algnm;
+    @include vertical_algnm;
     justify-content: space-around;
-    height: 100%;
+    height: $h100;
 
     li:last-child img {
         height: 45px;
@@ -81,8 +81,8 @@ export default {
 }
 
 .choose-operations {
-    @include vertical-algnm;
-    height: 100%;
+    @include vertical_algnm;
+    height: $h100;
 
     img {
         height: 70px;

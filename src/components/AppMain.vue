@@ -80,6 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixins' as *;
+@use '../assets/scss/partials/variables' as *;
 
 /* SECTION TOP CONTENT */
 #content-top {
@@ -88,12 +89,12 @@ export default {
 }
 
 .main-top-content {
-    height: 100%;
+    height: $h100;
 }
 
 h2 {
-    height: 100%;
-    @include vertical-algnm;
+    height: $h100;
+    @include vertical_algnm;
 }
 
 /* SECTION JUMBOTRON */
@@ -108,7 +109,7 @@ h2 {
 
 .jumbo-container {
     justify-content: space-between;
-    @include vertical-algnm;
+    @include vertical_algnm;
 }
 
 
