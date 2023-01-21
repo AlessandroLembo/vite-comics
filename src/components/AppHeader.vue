@@ -83,11 +83,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-/* Mixin for vertical alignment */
-@mixin vertical-algnm {
-    display: flex;
-    align-items: center;
-}
+@use '../assets/scss/partials/mixins' as *;
 
 /* HEADER */
 header {
