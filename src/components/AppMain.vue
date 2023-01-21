@@ -78,7 +78,7 @@ export default {
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* SECTION TOP CONTENT */
 #content-top {
     background-color: rgba(0, 0, 0, 0.8);
@@ -115,11 +115,16 @@ h2 {
 .link-lists {
     display: flex;
     align-items: flex-start;
+
+    li {
+        padding-bottom: 3px;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.3);
+    }
 }
 
-.link-lists li {
-    padding-bottom: 3px;
-}
 
 /* Utils */
 .top-list {
@@ -132,9 +137,5 @@ h2 {
 
 h2 {
     margin-bottom: 1rem;
-}
-
-.link-lists a {
-    color: rgba(255, 255, 255, 0.3);
 }
 </style>
