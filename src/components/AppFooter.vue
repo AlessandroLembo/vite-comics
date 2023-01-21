@@ -28,7 +28,7 @@ export default {
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* Footer */
 footer {
     background-color: #2c2c2c;
@@ -54,11 +54,12 @@ footer {
 .icon-footer {
     display: flex;
     align-items: center;
+
+    li {
+        padding: 0 10px;
+    }
 }
 
-.icon-footer li {
-    padding: 0 10px;
-}
 
 /* Utils */
 .sign-up button {
@@ -75,10 +76,10 @@ footer {
 
 .icon-claim {
     margin-right: 10px;
-}
 
-.icon-claim h2 {
-    color: #1a75ff;
-    cursor: pointer;
+    h2 {
+        color: #1a75ff;
+        cursor: pointer;
+    }
 }
 </style>
