@@ -1,6 +1,33 @@
 <script>
 export default {
-    name: 'AppMainContent'
+    name: 'AppMainContent',
+    data() {
+        return {
+            images: [
+                {
+                    picture: 'buy-comics-digital-comics.png',
+                    pictureTitle: 'DIGITAL COMICS'
+                },
+                {
+                    picture: 'buy-comics-merchandise.png',
+                    pictureTitle: 'DC MERCHANDISE'
+                },
+                {
+                    picture: 'buy-comics-subscriptions.png',
+                    pictureTitle: 'SUBSCRIPTION'
+                },
+                {
+                    picture: 'buy-comics-shop-locator.png',
+                    pictureTitle: 'COMIC SHOP LOCATOR'
+                },
+                {
+                    picture: 'buy-dc-power-visa.svg',
+                    pictureTitle: 'DC POWER VISA'
+                },
+
+            ]
+        }
+    }
 
 }
 </script>
@@ -13,9 +40,9 @@ export default {
                     <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics">
                     <h4>DIGITAL COMICS</h4>
                 </li>
-                <li class="choose-operations">
+                <!-- <li class="choose-operations">
                     <img src="../assets/img/buy-comics-merchandise.png" alt="merchandise">
-                    <h4>DIGITAL COMICS</h4>
+                    <h4>DC</h4>
                 </li>
                 <li class="choose-operations">
                     <img src="../assets/img/buy-comics-subscriptions.png" alt="subscription">
@@ -28,7 +55,7 @@ export default {
                 <li class="choose-operations">
                     <img src="../assets/img/buy-dc-power-visa.svg" alt="power visa">
                     <h4>DIGITAL COMICS</h4>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </section>
