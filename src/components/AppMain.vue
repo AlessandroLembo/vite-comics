@@ -93,8 +93,6 @@ export default {
 
 h2 {
     height: 100%;
-    // display: flex;
-    // align-items: center;
     @include vertical-algnm;
 }
 

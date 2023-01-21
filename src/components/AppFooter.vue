@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixins' as *;
+@use '../assets/scss/partials/variables' as *;
 
 /* Footer */
 footer {
@@ -67,7 +68,7 @@ footer {
     background-color: #2c2c2c;
     border-radius: 3px;
     border: 2px solid #1a75ff;
-    cursor: pointer;
+    cursor: $pointer;
 }
 
 .sign-up a {
@@ -79,7 +80,7 @@ footer {
 
     h2 {
         color: #1a75ff;
-        cursor: pointer;
+        cursor: $pointer;
     }
 }
 </style>
