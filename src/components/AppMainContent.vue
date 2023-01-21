@@ -58,7 +58,7 @@ export default {
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* SECTION MAIN LINKS */
 #links-main {
     background-color: dodgerblue;
@@ -71,20 +71,20 @@ export default {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+
+    li:last-child img {
+        height: 45px;
+    }
 }
 
 .choose-operations {
     display: flex;
     align-items: center;
     height: 100%;
-}
 
-.choose-operations img {
-    height: 70px;
-    margin-right: 10px;
-}
-
-.main-images li:last-child img {
-    height: 45px;
+    img {
+        height: 70px;
+        margin-right: 10px;
+    }
 }
 </style>
