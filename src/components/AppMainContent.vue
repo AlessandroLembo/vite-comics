@@ -6,26 +6,38 @@ export default {
             images: [
                 {
                     picture: 'buy-comics-digital-comics.png',
-                    pictureTitle: 'DIGITAL COMICS'
+                    alt: 'digital comics',
+                    pictureTitle: 'DIGITAL COMICS',
                 },
                 {
                     picture: 'buy-comics-merchandise.png',
+                    alt: 'merchandise',
                     pictureTitle: 'DC MERCHANDISE'
                 },
                 {
                     picture: 'buy-comics-subscriptions.png',
+                    alt: 'subscription',
                     pictureTitle: 'SUBSCRIPTION'
                 },
                 {
                     picture: 'buy-comics-shop-locator.png',
+                    alt: 'comic schop',
                     pictureTitle: 'COMIC SHOP LOCATOR'
                 },
                 {
                     picture: 'buy-dc-power-visa.svg',
+                    alt: 'power visa',
                     pictureTitle: 'DC POWER VISA'
                 },
 
             ]
+        }
+    },
+
+    methods: {
+        buildImagePath(image) {
+            const url = new URL(`../assets/img/${image.picture}`, import.meta.url);
+            return url.href;
         }
     }
 
@@ -36,26 +48,10 @@ export default {
     <section id="links-main">
         <nav class="container ">
             <ul class="main-images">
-                <li class="choose-operations">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics">
-                    <h4>DIGITAL COMICS</h4>
+                <li v-for="image in images" class="choose-operations">
+                    <img :src="buildImagePath(image)" :alt="image.alt">
+                    <h4> {{ image.pictureTitle }} </h4>
                 </li>
-                <!-- <li class="choose-operations">
-                    <img src="../assets/img/buy-comics-merchandise.png" alt="merchandise">
-                    <h4>DC</h4>
-                </li>
-                <li class="choose-operations">
-                    <img src="../assets/img/buy-comics-subscriptions.png" alt="subscription">
-                    <h4>DIGITAL COMICS</h4>
-                </li>
-                <li class="choose-operations">
-                    <img src="../assets/img/buy-comics-shop-locator.png" alt="comic schop">
-                    <h4>DIGITAL COMICS</h4>
-                </li>
-                <li class="choose-operations">
-                    <img src="../assets/img/buy-dc-power-visa.svg" alt="power visa">
-                    <h4>DIGITAL COMICS</h4>
-                </li> -->
             </ul>
         </nav>
     </section>
