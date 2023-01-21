@@ -12,7 +12,7 @@ export default {
 
   },
 
-  components: { AppHeader, AppMain, AppFooter }
+  components: { AppHeader, AppMain, AppFooter, }
 }
 </script>
 
@@ -20,6 +20,7 @@ export default {
   <app-header></app-header>
   <app-main></app-main>
   <app-footer></app-footer>
+
 
 </template>
 

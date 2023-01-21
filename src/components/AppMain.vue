@@ -1,6 +1,8 @@
 <script>
+import AppMainContent from './AppMainContent.vue';
 export default {
     name: 'AppMain',
+    components: { AppMainContent }
 
 }
 </script>
@@ -12,32 +14,9 @@ export default {
                 <h2>-- Content goes here --</h2>
             </div>
         </section>
-        <section id="links-main">
-            <nav class="container ">
-                <ul class="main-images">
-                    <li class="choose-operations">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics">
-                        <h4>DIGITAL COMICS</h4>
-                    </li>
-                    <li class="choose-operations">
-                        <img src="../assets/img/buy-comics-merchandise.png" alt="merchandise">
-                        <h4>DIGITAL COMICS</h4>
-                    </li>
-                    <li class="choose-operations">
-                        <img src="../assets/img/buy-comics-subscriptions.png" alt="subscription">
-                        <h4>DIGITAL COMICS</h4>
-                    </li>
-                    <li class="choose-operations">
-                        <img src="../assets/img/buy-comics-shop-locator.png" alt="comic schop">
-                        <h4>DIGITAL COMICS</h4>
-                    </li>
-                    <li class="choose-operations">
-                        <img src="../assets/img/buy-dc-power-visa.svg" alt="power visa">
-                        <h4>DIGITAL COMICS</h4>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+
+        <app-main-content></app-main-content>
+
         <section id="jumbotron">
             <div class="container jumbo-container">
                 <div class="link-lists">
@@ -116,7 +95,7 @@ h2 {
     align-items: center;
 }
 
-/* SECTION MAIN LINKS */
+/* SECTION MAIN LINKS
 #links-main {
     background-color: dodgerblue;
     height: 150px;
@@ -143,7 +122,7 @@ h2 {
 
 .main-images li:last-child img {
     height: 45px;
-}
+} */
 
 /* SECTION JUMBOTRON */
 #jumbotron {
