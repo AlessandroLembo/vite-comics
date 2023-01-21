@@ -59,6 +59,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/mixins' as *;
+
 /* SECTION MAIN LINKS */
 #links-main {
     background-color: dodgerblue;
@@ -67,9 +69,8 @@ export default {
 }
 
 .main-images {
-    display: flex;
+    @include vertical-algnm;
     justify-content: space-around;
-    align-items: center;
     height: 100%;
 
     li:last-child img {
@@ -78,8 +79,7 @@ export default {
 }
 
 .choose-operations {
-    display: flex;
-    align-items: center;
+    @include vertical-algnm;
     height: 100%;
 
     img {
