@@ -3,7 +3,7 @@ export default {
     name: 'AppHeader',
     data() {
         return {
-            links: [
+            sections: [
                 {
                     text: 'Characters',
                     url: '#',
@@ -71,17 +71,9 @@ export default {
                 </figure>
                 <nav>
                     <ul class="nav-header">
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-                        <li class="pdg-sm-space active"><a class="active" href="#">Characters</a></li>
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-                        <li class="pdg-sm-space"><a href="#">Characters</a></li>
-
+                        <li v-for="section in sections" class="pdg-sm-space" :class="{ 'active': section.current }">
+                            <a :href="section.url" :class="{ 'active': section.current }"> {{ section.text }} </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -103,6 +95,11 @@ header {
     justify-content: space-between;
 }
 
+.header-container img {
+    cursor: pointer;
+}
+
+/* Navbar Header */
 nav {
     height: 100%;
 }
@@ -124,16 +121,16 @@ nav {
     padding-top: 4px;
 }
 
+/* Utils */
+.pdg-sm-space {
+    padding: 0 10px;
+}
+
 .nav-header a {
     color: black;
 }
 
 .nav-header a.active {
     color: dodgerblue;
-}
-
-/* Utils */
-.pdg-sm-space {
-    padding: 0 10px;
 }
 </style>

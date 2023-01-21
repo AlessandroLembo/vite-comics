@@ -66,7 +66,7 @@ footer {
     padding: 10px;
     background-color: #2c2c2c;
     border-radius: 3px;
-    border: 3px solid #1a75ff;
+    border: 2px solid #1a75ff;
     cursor: pointer;
 }
 
@@ -80,5 +80,6 @@ footer {
 
 .icon-claim h2 {
     color: #1a75ff;
+    cursor: pointer;
 }
 </style>

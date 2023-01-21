@@ -60,6 +60,5 @@ li {
 
 h2 {
   color: white;
-  cursor: pointer;
 }
 </style>

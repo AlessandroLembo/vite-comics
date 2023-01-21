@@ -13,8 +13,8 @@ export default {
             </div>
         </section>
         <section id="links-main">
-            <div class="container">
-                <h2>ICON</h2>
+            <div class="container main-images">
+
             </div>
         </section>
         <section id="jumbotron">
@@ -100,6 +100,10 @@ h2 {
     background-color: dodgerblue;
     height: 150px;
     position: relative;
+}
+
+.main-images {
+    display: flex;
 }
 
 /* SECTION JUMBOTRON */
