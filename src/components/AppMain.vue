@@ -79,6 +79,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/mixins' as *;
+
 /* SECTION TOP CONTENT */
 #content-top {
     background-color: rgba(0, 0, 0, 0.8);
@@ -91,8 +93,9 @@ export default {
 
 h2 {
     height: 100%;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    @include vertical-algnm;
 }
 
 /* SECTION JUMBOTRON */
@@ -106,9 +109,8 @@ h2 {
 }
 
 .jumbo-container {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    @include vertical-algnm;
 }
 
 
