@@ -17,10 +17,10 @@ export default {
                 </div>
                 <nav class="icon-footer">
                     <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="facebook"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="facebook"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="facebook"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope"></a></li>
                 </nav>
             </div>
         </div>

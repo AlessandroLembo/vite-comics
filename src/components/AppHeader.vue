@@ -128,6 +128,8 @@ nav {
 
 .nav-header a {
     color: black;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .nav-header a.active {

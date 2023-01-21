@@ -58,7 +58,8 @@ li {
   cursor: pointer;
 }
 
-h2 {
+h2,
+h4 {
   color: white;
 }
 </style>
