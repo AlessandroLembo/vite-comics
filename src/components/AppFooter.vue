@@ -29,6 +29,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/mixins' as *;
+
 /* Footer */
 footer {
     background-color: #2c2c2c;
@@ -38,22 +40,19 @@ footer {
 
 /* Left footer */
 .footer-content {
-    display: flex;
-    align-items: center;
+    @include vertical-algnm;
     justify-content: space-between;
 }
 
 /* Right footer */
 .links-footer {
-    display: flex;
-    align-items: center;
+    @include vertical-algnm;
     justify-content: center;
 }
 
 
 .icon-footer {
-    display: flex;
-    align-items: center;
+    @include vertical-algnm;
 
     li {
         padding: 0 10px;
