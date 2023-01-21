@@ -57,6 +57,7 @@ footer {
 
     li {
         padding: 0 10px;
+        cursor: default;
     }
 }
 

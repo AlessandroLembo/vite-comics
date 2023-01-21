@@ -114,22 +114,23 @@ nav {
         color: black;
         font-weight: 400;
         font-size: 20px;
-    }
 
-    a.active {
-        color: dodgerblue;
+        &.active {
+            color: dodgerblue;
+        }
     }
 
     li {
         height: 100%;
         display: flex;
         align-items: center;
+
+        &.active {
+            border-bottom: 4px solid dodgerblue;
+            padding-top: 4px;
+        }
     }
 
-    li.active {
-        border-bottom: 4px solid dodgerblue;
-        padding-top: 4px;
-    }
 }
 
 /* Utils */
