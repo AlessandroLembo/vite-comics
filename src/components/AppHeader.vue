@@ -82,10 +82,11 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* HEADER */
 header {
     height: 120px;
+    background-color: whitesmoke;
 }
 
 .header-container {
@@ -93,10 +94,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.header-container img {
-    cursor: pointer;
+    img {
+        cursor: pointer;
+    }
 }
 
 /* Navbar Header */
@@ -108,31 +109,31 @@ nav {
     display: flex;
     align-items: center;
     height: 100%;
-}
 
-.nav-header li {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
+    a {
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+    }
 
-.nav-header li.active {
-    border-bottom: 4px solid dodgerblue;
-    padding-top: 4px;
+    a.active {
+        color: dodgerblue;
+    }
+
+    li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    li.active {
+        border-bottom: 4px solid dodgerblue;
+        padding-top: 4px;
+    }
 }
 
 /* Utils */
 .pdg-sm-space {
     padding: 0 10px;
-}
-
-.nav-header a {
-    color: black;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.nav-header a.active {
-    color: dodgerblue;
 }
 </style>

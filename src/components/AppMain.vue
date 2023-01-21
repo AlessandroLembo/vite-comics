@@ -95,35 +95,6 @@ h2 {
     align-items: center;
 }
 
-/* SECTION MAIN LINKS
-#links-main {
-    background-color: dodgerblue;
-    height: 150px;
-    position: relative;
-}
-
-.main-images {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.choose-operations {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.choose-operations img {
-    height: 70px;
-    margin-right: 10px;
-}
-
-.main-images li:last-child img {
-    height: 45px;
-} */
-
 /* SECTION JUMBOTRON */
 #jumbotron {
     background-image: url('../assets/img/footer-bg.jpg');

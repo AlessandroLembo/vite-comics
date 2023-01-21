@@ -17,10 +17,11 @@ export default {
 </script>
 
 <template>
-  <app-header></app-header>
-  <app-main></app-main>
-  <app-footer></app-footer>
-
+  <div class="wrapper">
+    <app-header></app-header>
+    <app-main></app-main>
+    <app-footer></app-footer>
+  </div>
 
 </template>
 
@@ -35,6 +36,11 @@ export default {
 /* Generics */
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 1800px;
+  margin: 0 auto;
 }
 
 .container {
