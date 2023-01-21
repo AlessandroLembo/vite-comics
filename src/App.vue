@@ -25,48 +25,6 @@ export default {
 
 </template>
 
-<style>
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Generics */
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-.wrapper {
-  width: 1800px;
-  margin: 0 auto;
-}
-
-.container {
-  width: 1400px;
-  margin: 0 auto;
-  height: 100%;
-}
-
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Utils */
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-  cursor: pointer;
-}
-
-h2,
-h4 {
-  color: white;
-}
+<style lang="scss">
+@use './assets/scss/style.scss';
 </style>
