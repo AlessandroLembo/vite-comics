@@ -85,7 +85,7 @@ export default {
 /* SECTION TOP CONTENT */
 #content-top {
     background-color: rgba(0, 0, 0, 0.8);
-    height: 120px;
+    height: 130px;
 }
 
 .main-top-content {
@@ -103,19 +103,21 @@ h2 {
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh - 510px);
+    height: 450px;
 
 }
 
 .jumbo-container {
-    justify-content: space-between;
     @include vertical_algnm;
+    justify-content: space-between;
+    height: $h100;
 }
-
 
 .link-lists {
     display: flex;
     align-items: flex-start;
+    height: 100%;
+    margin-top: 8rem;
 
     li {
         padding-bottom: 3px;
@@ -124,6 +126,15 @@ h2 {
     a {
         color: rgba(255, 255, 255, 0.3);
     }
+}
+
+.jumbo-container figure {
+    height: $h100;
+    @include vertical_algnm;
+}
+
+.jumbo-container img {
+    height: 140%;
 }
 
 
