@@ -1,21 +1,23 @@
 <script>
 import AppMainContent from './AppMainContent.vue';
+import AppCard from './AppCard.vue';
+
 export default {
     name: 'AppMain',
-    components: { AppMainContent }
+    components: { AppMainContent, AppCard }
 
 }
 </script>
 
 <template>
     <main>
-        <section id="content-top">
+        <!-- <section id="content-top">
             <div class="container main-top-content">
                 <h2>-- Content goes here --</h2>
                 <p>Cards</p>
             </div>
-        </section>
-
+        </section> -->
+        <app-card></app-card>
         <app-main-content></app-main-content>
 
         <section id="jumbotron">
@@ -83,24 +85,24 @@ export default {
 @use '../assets/scss/partials/mixins' as *;
 @use '../assets/scss/partials/variables' as *;
 
-/* SECTION TOP CONTENT */
-#content-top {
-    background-color: rgba(0, 0, 0, 0.8);
-    min-height: 130px;
-}
+// /* SECTION TOP CONTENT */
+// #content-top {
+//     background-color: rgba(0, 0, 0, 0.8);
+//     min-height: 130px;
+// }
 
-.main-top-content {
-    min-height: $h100;
-    @include vertical_algnm;
-}
+// .main-top-content {
+//     min-height: $h100;
+//     @include vertical_algnm;
+// }
 
-h2,
-p {
-    height: $h100;
-    @include vertical_algnm;
-    margin: 1rem auto;
-    color: white;
-}
+// h2,
+// p {
+//     height: $h100;
+//     @include vertical_algnm;
+//     margin: 1rem auto;
+//     color: white;
+// }
 
 /* SECTION JUMBOTRON */
 #jumbotron {
