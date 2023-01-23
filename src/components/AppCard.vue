@@ -99,7 +99,7 @@ export default {
         <div class="container main-top-content">
             <div v-for="card in cards" :key="card.series" class="col">
                 <div class="card">
-                    <img :src="`${card.thumb}`" :alt="card.type">
+                    <img :src="card.thumb" :alt="card.type">
                     <h3> {{ card.series }} </h3>
                 </div>
             </div>
