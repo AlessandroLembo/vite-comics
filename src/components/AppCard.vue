@@ -100,6 +100,7 @@ export default {
             <div v-for="card in cards" :key="card.series" class="col">
                 <div class="card">
                     <img :src="`${card.thumb}`" :alt="card.type">
+                    <h3> {{ card.series }} </h3>
                 </div>
             </div>
         </div>
@@ -131,14 +132,20 @@ export default {
 }
 
 .card {
-    border: 1px dashed blue;
+    // border: 1px dashed blue;
     height: $h100;
 
     img {
-        height: 85%;
+        height: 80%;
         width: 100%;
         object-fit: cover;
         object-position: 100% 0%;
+    }
+
+    h3 {
+        padding-top: 10px;
+        color: white;
+        font-size: 15px;
     }
 }
 </style>
