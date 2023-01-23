@@ -97,41 +97,10 @@ export default {
 <template>
     <section id="content-top">
         <div class="container main-top-content">
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
-            </div>
-            <div class="col">
-                <div class="card"></div>
+            <div v-for="card in cards" :key="card.series" class="col">
+                <div class="card">
+                    <img :src="`${card.thumb}`" :alt="card.type">
+                </div>
             </div>
         </div>
     </section>
@@ -156,7 +125,7 @@ export default {
 
 .col {
     flex-basis: calc(100% / 6);
-    height: 200px;
+    height: 240px;
     margin: 1rem auto;
     padding: 0 1rem;
 }
@@ -164,5 +133,12 @@ export default {
 .card {
     border: 1px dashed blue;
     height: $h100;
+
+    img {
+        height: 85%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 100% 0%;
+    }
 }
 </style>
