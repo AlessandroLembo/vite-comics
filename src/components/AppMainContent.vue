@@ -48,7 +48,7 @@ export default {
     <section id="links-main">
         <nav class="container ">
             <ul class="main-images">
-                <li v-for="image in images" class="choose-operations">
+                <li v-for="image in images" class="choose-operations" :key="image.pictureTitle">
                     <img :src="buildImagePath(image)" :alt="image.alt">
                     <h4> {{ image.pictureTitle }} </h4>
                 </li>

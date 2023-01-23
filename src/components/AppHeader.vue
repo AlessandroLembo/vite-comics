@@ -71,7 +71,8 @@ export default {
                 </figure>
                 <nav>
                     <ul class="nav-header">
-                        <li v-for="section in sections" class="pdg-sm-space" :class="{ 'active': section.current }">
+                        <li v-for="section in sections" class="pdg-sm-space" :class="{ 'active': section.current }"
+                            :key="section.text">
                             <a :href="section.url" :class="{ 'active': section.current }"> {{ section.text }} </a>
                         </li>
                     </ul>
