@@ -1,10 +1,12 @@
 <script>
 import AppMainContent from './AppMainContent.vue';
 import ArticleCard from './articles/ArticleCard.vue';
+import BannerImage from './BannerImage.vue';
+
 
 export default {
     name: 'AppMain',
-    components: { AppMainContent, ArticleCard },
+    components: { AppMainContent, ArticleCard, BannerImage },
     data() {
         return {
             articles: [
@@ -101,6 +103,8 @@ export default {
 
 <template>
     <main>
+        <banner-image></banner-image>
+
         <section id="content-top">
             <div class="container main-top-content">
                 <div class="container main-top-content">
@@ -112,6 +116,7 @@ export default {
         </section>
 
         <app-main-content></app-main-content>
+
 
         <section id="jumbotron">
             <div class="container jumbo-container">
