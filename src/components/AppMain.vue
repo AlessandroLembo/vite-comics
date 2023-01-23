@@ -96,7 +96,7 @@ export default {
                 }
             ]
         }
-    }
+    },
 
 }
 </script>
@@ -109,7 +109,7 @@ export default {
             <div class="container cards-section">
                 <button id="current-series">CURRENT SERIES</button>
                 <div class="main-top-content">
-                    <div class="container main-top-content">
+                    <div class="main-top-content">
                         <div v-for="article in articles" :key="article.series" class="col">
                             <article-card :article="article"></article-card>
                         </div>
@@ -199,7 +199,7 @@ export default {
 
         #current-series {
             @include btn-style;
-            width: 200px;
+            width: 280px;
             height: 50px;
             padding: 15px 20px;
             font-size: 18px;
@@ -212,7 +212,7 @@ export default {
             min-height: $h100;
             @include vertical_algnm;
             flex-wrap: wrap;
-            padding-bottom: 1.5rem;
+            padding: 1rem 0;
 
             .col {
                 flex-basis: calc(100% / 6);
