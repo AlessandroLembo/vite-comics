@@ -106,11 +106,15 @@ export default {
         <banner-image></banner-image>
 
         <section id="content-top">
-            <div class="container main-top-content">
-                <div class="container main-top-content">
-                    <div v-for="article in articles" :key="article.series" class="col">
-                        <article-card :article="article"></article-card>
+            <div class="container cards-section">
+                <button id="current-series">CURRENT SERIES</button>
+                <div class="main-top-content">
+                    <div class="container main-top-content">
+                        <div v-for="article in articles" :key="article.series" class="col">
+                            <article-card :article="article"></article-card>
+                        </div>
                     </div>
+                    <button id="load">LOAD MORE</button>
                 </div>
             </div>
         </section>
@@ -182,27 +186,53 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixins' as *;
 @use '../assets/scss/partials/variables' as *;
+@use '../assets/scss/partials/buttons.scss' as *;
+
 
 /* SECTION TOP CONTENT */
 #content-top {
     background-color: rgba(0, 0, 0, 0.8);
     min-height: 130px;
 
-    .main-top-content {
-        min-height: $h100;
-        @include vertical_algnm;
-        flex-wrap: wrap;
-        padding-bottom: 1.5rem;
+    .cards-section {
+        position: relative;
 
-        .col {
-            flex-basis: calc(100% / 6);
-            height: 240px;
-            margin: 2rem auto 0.5rem;
-            padding: 0 1rem;
+        #current-series {
+            @include btn-style;
+            width: 200px;
+            height: 50px;
+            padding: 15px 20px;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: -25px;
         }
 
+        .main-top-content {
+            min-height: $h100;
+            @include vertical_algnm;
+            flex-wrap: wrap;
+            padding-bottom: 1.5rem;
+
+            .col {
+                flex-basis: calc(100% / 6);
+                height: 240px;
+                margin: 2rem auto 0.5rem;
+                padding: 0 1rem;
+            }
+        }
+
+        #load {
+            @include btn-style;
+            width: 180px;
+            padding: 10px 5px;
+            margin: 1rem auto;
+        }
     }
+
 }
+
+
 
 /* SECTION JUMBOTRON */
 #jumbotron {
