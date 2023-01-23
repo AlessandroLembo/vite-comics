@@ -97,8 +97,42 @@ export default {
 <template>
     <section id="content-top">
         <div class="container main-top-content">
-            <h2>-- Content goes here --</h2>
-            <p>Cards</p>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
+            <div class="col">
+                <div class="card"></div>
+            </div>
         </div>
     </section>
 
@@ -117,13 +151,18 @@ export default {
 .main-top-content {
     min-height: $h100;
     @include vertical_algnm;
+    flex-wrap: wrap;
 }
 
-h2,
-p {
-    height: $h100;
-    @include vertical_algnm;
+.col {
+    flex-basis: calc(100% / 6);
+    height: 200px;
     margin: 1rem auto;
-    color: white;
+    padding: 0 1rem;
+}
+
+.card {
+    border: 1px dashed blue;
+    height: $h100;
 }
 </style>
