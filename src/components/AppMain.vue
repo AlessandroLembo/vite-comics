@@ -101,7 +101,16 @@ export default {
 
 <template>
     <main>
-        <article-card :articles="articles"></article-card>
+        <section id="content-top">
+            <div class="container main-top-content">
+                <div class="container main-top-content">
+                    <div v-for="article in articles" :key="article.series" class="col">
+                        <article-card :article="article"></article-card>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <app-main-content></app-main-content>
 
         <section id="jumbotron">
@@ -168,6 +177,27 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixins' as *;
 @use '../assets/scss/partials/variables' as *;
+
+/* SECTION TOP CONTENT */
+#content-top {
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 130px;
+
+    .main-top-content {
+        min-height: $h100;
+        @include vertical_algnm;
+        flex-wrap: wrap;
+        padding-bottom: 1.5rem;
+
+        .col {
+            flex-basis: calc(100% / 6);
+            height: 240px;
+            margin: 2rem auto 0.5rem;
+            padding: 0 1rem;
+        }
+
+    }
+}
 
 /* SECTION JUMBOTRON */
 #jumbotron {
