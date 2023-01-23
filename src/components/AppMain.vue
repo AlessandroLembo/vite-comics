@@ -12,6 +12,7 @@ export default {
         <section id="content-top">
             <div class="container main-top-content">
                 <h2>-- Content goes here --</h2>
+                <p>Cards</p>
             </div>
         </section>
 
@@ -85,16 +86,20 @@ export default {
 /* SECTION TOP CONTENT */
 #content-top {
     background-color: rgba(0, 0, 0, 0.8);
-    height: 130px;
+    min-height: 130px;
 }
 
 .main-top-content {
-    height: $h100;
+    min-height: $h100;
+    @include vertical_algnm;
 }
 
-h2 {
+h2,
+p {
     height: $h100;
     @include vertical_algnm;
+    margin: 1rem auto;
+    color: white;
 }
 
 /* SECTION JUMBOTRON */
