@@ -1,7 +1,11 @@
 <script>
 
 export default {
-    name: 'AppCard',
+    name: 'ArticleCard',
+    props: {
+        articles: Array
+    },
+
 }
 </script>
 
@@ -20,8 +24,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/mixins' as *;
-@use '../assets/scss/partials/variables' as *;
+@use '../../assets/scss/partials/mixins' as *;
+@use '../../assets/scss/partials/variables' as *;
 
 /* SECTION TOP CONTENT */
 #content-top {
@@ -44,7 +48,6 @@ export default {
 }
 
 .card {
-    // border: 1px dashed blue;
     height: $h100;
 
     img {

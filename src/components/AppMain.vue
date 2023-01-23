@@ -1,10 +1,10 @@
 <script>
 import AppMainContent from './AppMainContent.vue';
-import AppCard from './articles/AppCard.vue';
+import ArticleCard from './articles/ArticleCard.vue';
 
 export default {
     name: 'AppMain',
-    components: { AppMainContent, AppCard },
+    components: { AppMainContent, ArticleCard },
     data() {
         return {
             articles: [
@@ -101,7 +101,7 @@ export default {
 
 <template>
     <main>
-        <app-card></app-card>
+        <article-card :articles="articles"></article-card>
         <app-main-content></app-main-content>
 
         <section id="jumbotron">
